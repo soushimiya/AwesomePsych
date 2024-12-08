@@ -823,7 +823,7 @@ class ModItem extends FlxSpriteGroup
 			try
 			{
 				//trace('trying to load settings: $folder');
-				settings = tjson.TJSON.parse(File.getContent(path));
+				settings = haxe.Json.parse(File.getContent(path));
 			}
 			catch(e:Dynamic)
 			{
